@@ -4,13 +4,41 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+ @import url('https://fonts.googleapis.com/css2?family=Podkova:wght@400..800&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
  .inter-uniquifier {
   font-family: "Inter", system-ui;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+}
+
+section {
+  overflow: hidden; /* Ngăn các phần tử bên trong tràn ra ngoài */
+}
+
+.podkova-uniquifier {
+  font-family: "Podkova", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body h1, h2, h3, h4, h5 {
+  color: #ffc107;
+}
+
+body h4 {
+  margin: 20px 0;
+}
+
+body p {
+  color: #fff;
+}
+
+
+.left p {
+  text-align: left;
 }
 
 *{ scroll-behavior: smooth}
@@ -4301,13 +4329,13 @@ input[type="button"].btn-block {
 .nav-pills .nav-link {
   border-radius: 0rem;
 	margin: 20px;
-	border-bottom: 2px solid yellow
+	border-bottom: 2px solid #ffc107
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #DFD81B;
+  background-color: #ffc107;
 }
 
 .nav-fill .nav-item {
@@ -4745,7 +4773,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #3A3A3A;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -6553,7 +6581,9 @@ a.close.disabled {
 }
 
 .carousel-control-next-icon {
+ 
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e");
+
 }
 
 .carousel-indicators {
@@ -6723,6 +6753,11 @@ button.bg-primary:focus {
   background-color:#272727;
 }
 
+.bg-secondary-100 {
+  background-color:#3A3A3A;
+}
+
+
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
@@ -6798,7 +6833,7 @@ button.bg-dark:focus {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 5px solid #ffc107 !important;
 }
 
 .border-top {
